@@ -14,4 +14,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:id="@+id/toNutInfo"
+        android:onClick="ToNutInfo" />
 </RelativeLayout>
