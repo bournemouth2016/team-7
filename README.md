@@ -8,3 +8,4 @@ Diagram:
 - We're working on how to interpret data from the CotD software.
 - Then we'll be having dinner
 - Leon's git works.
+- Manav’s git works.
