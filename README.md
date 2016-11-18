@@ -20,3 +20,4 @@ Diagram:
 - Manav’s git works.
 - Darryl's git works.
 - Rachael's git works.
+- Sean's git works.
