@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-hdpi/tile.9.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-hdpi/tile.9.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_settings.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-hdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_location.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-hdpi/ic_action_location.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_launcher.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_refresh.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-hdpi/ic_action_refresh.png"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_refresh.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-mdpi/ic_action_refresh.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_settings.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-mdpi/ic_action_settings.png"
+    },
+    {
+        "merged": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_location.png",
+        "source": "/Users/Manav/AndroidStudioProjects/ActionBarCompat-Basic/Application/src/main/res/drawable-mdpi/ic_action_location.png"
+    }
+]
