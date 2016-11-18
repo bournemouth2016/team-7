@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name" gravity = "center">Current Diet</string>
+    <string name="app_name" gravity="center">Current Diet</string>
+    <string name="title_activity_nutritional__information">Nutritional Information</string>
 </resources>
