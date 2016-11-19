@@ -19,10 +19,16 @@
         android:id="@+id/compare_Diets"
         android:onClick="Compare_Diets" />
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:scrollbars="horizontal|vertical"
+        android:fadingEdge="horizontal|vertical">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -30,10 +36,12 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:paddingBottom="51dp"
+                android:paddingTop="51dp">
 
                 <TextView
-                    android:text="Protein"
+                    android:text="Protein:"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/protineTextFeild"
@@ -50,10 +58,11 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:paddingBottom="51dp">
 
                 <TextView
-                    android:text="Energy"
+                    android:text="Energy:"
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/energyTextField"
@@ -70,10 +79,11 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent"
+                android:paddingBottom="51dp">
 
                 <TextView
-                    android:text="Cost"
+                    android:text="Total Cost:   "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/costTextField"
@@ -87,6 +97,20 @@
                     android:textSize="30sp" />
             </TableRow>
 
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="RI = Recommended Intake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:layout_span="2"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
+            </TableRow>
+
         </TableLayout>
     </ScrollView>
+</HorizontalScrollView>
 </RelativeLayout>

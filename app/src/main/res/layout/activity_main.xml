@@ -114,7 +114,7 @@
                 android:layout_height="match_parent" >
 
                 <TextView
-                    android:text="Breast Milk"
+                    android:text="Breast Milk Weekly Portion     "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/textView15"
