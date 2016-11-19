@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class NewDiet extends AppCompatActivity {
-
+//Adding enough of the previous foods to bring the old diet to get all the nutrients required are met.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Nutritional_Information extends AppCompatActivity {
-
+//percentage of actual diet we have. i.e. RDA. So total and then collate data...
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

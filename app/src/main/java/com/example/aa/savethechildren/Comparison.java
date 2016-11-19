@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Comparison extends AppCompatActivity {
-
+//Compare current diet to the either of the diets. Prints out the three nutrients of the lowest percentage. and prints out the food with the three highest nutrients...
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
