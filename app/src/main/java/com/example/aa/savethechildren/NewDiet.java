@@ -9,7 +9,7 @@ public class NewDiet extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_shopping_list);
+        setContentView(R.layout.activity_new_diet);
 
         // changes Title and Subtitle
         android.support.v7.app.ActionBar ab = getSupportActionBar();
