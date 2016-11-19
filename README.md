@@ -21,3 +21,10 @@ Diagram:
 - Darryl's git works.
 - Rachael's git works.
 - Sean's git works.
+- `.gitignore` issues
+- Deleted all the code and started all over again
+- Added `.idea` and `.gradle` files to `.gitignore`
+- Fixing Leon's Windows laptop (Android Studio does not support AMD-v)
+- Fixing Manav's Mac OS X laptop so it can properly perform Git `push` and `pull` functions
+- Fixing Atul's, Sean's, and Rachael's laptop so it can properly perform Git `push` and `pull` functions
+- Atul had a piece of plastic in his burrito and almost died
