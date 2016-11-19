@@ -28,3 +28,8 @@ Diagram:
 - Fixing Manav's Mac OS X laptop so it can properly perform Git `push` and `pull` functions
 - Fixing Atul's, Sean's, and Rachael's laptop so it can properly perform Git `push` and `pull` functions
 - Atul had a piece of plastic in his burrito and almost died
+- Leon had a first order differential at 90 degrees vomit vector directed at Atul's laptop
+- RT
+- Sean is missing please contact
+- Leon has lost it
+- Parser bug has consumed us all
