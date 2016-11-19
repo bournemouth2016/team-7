@@ -12,6 +12,10 @@ public class Nutritional_Information extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nutritional__information);
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("Nutritional information");
     }
 
     Intent intent = getIntent();
@@ -21,10 +25,7 @@ public class Nutritional_Information extends AppCompatActivity {
         Button compare_Diets = (Button) findViewById(R.id.compare_Diets);
         startActivity(intent);
 
-        // changes Title and Subtitle
-        android.support.v7.app.ActionBar ab = getSupportActionBar();
 
-        ab.setTitle("Nutritional information");
     }
 
 

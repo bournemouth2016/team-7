@@ -10,6 +10,60 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aa.savethechildren.Nutritional_Information">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/compare_Diets">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <TextView
+                android:text="Protein"
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/protineTextFeild"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="Protein Percent"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Protein_Percent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="Energy"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/energyTextField"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="Energy Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/energy_Percent"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="Cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/costTextField"
+                android:textSize="30sp" />
+
+            <TextView
+                android:text="Cost Percent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost_Percent"
+                android:textSize="30sp" />
+        </GridLayout>
+    </ScrollView>
+
     <Button
         android:text="Compare Diets"
         android:layout_width="wrap_content"
