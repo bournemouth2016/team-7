@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Nutritional_Information" />
-        <activity android:name=".Comparison"></activity>
+        <activity android:name=".Comparison" />
+        <activity android:name=".NewDiet"></activity>
     </application>
 
 </manifest>
