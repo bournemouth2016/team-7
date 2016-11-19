@@ -10,4 +10,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.aa.savethechildren.Comparison">
 
+    <Button
+        android:text="To New Diet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="29dp"
+        android:id="@+id/toNewDiet"
+        android:onClick="ToNewDiet" />
 </RelativeLayout>
