@@ -171,7 +171,8 @@
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/cholaSafed_current"
-                    android:text="0" />
+                    android:text="0"
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
             </TableRow>
 
             <TableRow

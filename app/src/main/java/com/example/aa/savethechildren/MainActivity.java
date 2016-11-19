@@ -98,54 +98,37 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void Aalu(float quantity) {
-        if (quantity >= 1) {
             plan[0][0] = "Aalu";
             plan[0][1] = Float.toString(quantity);
             plan[0][2]=Float.toString((float) (quantity*24.16));
             plan[0][3]=Float.toString((float) (quantity*0.2));
             plan[0][4]=Float.toString((float) (quantity*0.12));
-        } else {
-            plan[0][1] = Float.toString(0);
-        }
-
     }
 
     public void Aata(float quantity) {
-        if (quantity >= 1) {
             plan[1][0] = "Aata";
             plan[1][1] = Float.toString(quantity);
             plan[1][2] = Float.toString((float) (quantity * 17.83));
             plan[1][3] = Float.toString((float) (quantity * 1.01));
             plan[1][4] = Float.toString((float) (quantity * 1.34));
             return;
-        } else {
-            plan[1][1] = Float.toString(0);
-        }
     }
     public void Bajra(float quantity) {
-        if (quantity >= 1) {
             plan[2][0] = "Bajra";
             plan[2][1] = Float.toString(quantity);
             plan[2][2] = Float.toString((float) (quantity * 14.24));
             plan[2][3] = Float.toString((float) (quantity * 1.08));
             plan[2][4] = Float.toString((float) (quantity * 1.05));
             return;
-        } else {
-            plan[2][1] = Float.toString(0);
-        }
     }
 
     public void Bhains(float quantity) {
-        if (quantity >= 1) {
             plan[3][0] = "Bhains ka dudh";
             plan[3][1] = Float.toString(quantity);
             plan[3][2] = Float.toString((float) (quantity * 38.69));
             plan[3][3] = Float.toString((float) (quantity * 0.3));
             plan[3][4] = Float.toString((float) (quantity * 0.38));
             return;
-        } else {
-            plan[3][1] = Float.toString(0);
-        }
     }
 
     public void Breast(float quantity) {
@@ -221,26 +204,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Sarson(float quantity) {
-        plan[11][0] = "Sarson";
-        plan[11][1] = Float.toString(quantity);
-        plan[11][2]=Float.toString((float) (quantity*14));
-        plan[11][3]=Float.toString((float) (quantity*0.5));
-        plan[11][4]=Float.toString((float) (quantity*0.8));
+        plan[12][0] = "Sarson";
+        plan[12][1] = Float.toString(quantity);
+        plan[12][2]=Float.toString((float) (quantity*14));
+        plan[12][3]=Float.toString((float) (quantity*0.5));
+        plan[12][4]=Float.toString((float) (quantity*0.8));
         return;
     }
 
     public void Tejpata(float quantity) {
-        plan[12][0] = "Tejpata";
-        plan[12][1] = Float.toString(quantity);
-        plan[12][2]=Float.toString((float) (quantity*5));
-        plan[12][3]=Float.toString((float) (quantity*0));
-        plan[12][4]=Float.toString((float) (quantity*0));
+        plan[13][0] = "Tejpata";
+        plan[13][1] = Float.toString(quantity);
+        plan[13][2]=Float.toString((float) (quantity*5));
+        plan[13][3]=Float.toString((float) (quantity*0));
+        plan[13][4]=Float.toString((float) (quantity*0));
         return;
     }
 
     public static float totalCost(){
         float total=0;
-        for (int i=0;i<13;i++){
+        for (int i=0;i<14;i++){
             total+=Float.parseFloat(plan[i][2]);
         }
     return total;
@@ -248,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static float totalProtein() {
         float total = 0;
-        for (int i = 0; i < 13; i++) {
+        for (int i = 0; i < 14; i++) {
             total += Float.parseFloat(plan[i][4]);
         }
         return total*52;
@@ -256,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static float totalEnergy() {
         float total = 0;
-        for (int i = 0; i < 13; i++) {
+        for (int i = 0; i < 14; i++) {
             total += Float.parseFloat(plan[i][3]);
         }
         return total*52;
