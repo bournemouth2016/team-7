@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("Current diet");
+
     }
 
     public void ToNutInfo(View view) {

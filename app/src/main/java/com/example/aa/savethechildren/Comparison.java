@@ -20,6 +20,11 @@ public class Comparison extends AppCompatActivity {
         Intent intent = new Intent(this, NewDiet.class);
         Button toNewDiet = (Button) findViewById(R.id.toNewDiet);
         startActivity(intent);
+
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("Compare your diets");
     }
 
 }

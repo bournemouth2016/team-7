@@ -10,6 +10,11 @@ public class NewDiet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_shopping_list);
+
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("New diet");
     }
 
     Intent intent = getIntent();

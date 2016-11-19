@@ -20,6 +20,11 @@ public class Nutritional_Information extends AppCompatActivity {
         Intent intent = new Intent(this, Comparison.class);
         Button compare_Diets = (Button) findViewById(R.id.compare_Diets);
         startActivity(intent);
+
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("Nutritional information");
     }
 
 
