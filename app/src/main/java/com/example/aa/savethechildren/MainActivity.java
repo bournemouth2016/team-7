@@ -1,15 +1,26 @@
 package com.example.aa.savethechildren;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+import com.opencsv.CSVReader;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
+    //public static String[][] plan = new String[14][5];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,16 +31,60 @@ public class MainActivity extends AppCompatActivity {
         android.support.v7.app.ActionBar ab = getSupportActionBar();
 
         ab.setTitle("Current diet");
-
+// void Aalu(Float float, String[1][5])
     }
+
+    /*public static void Aalu(float quantity) {
+        plan[0][0] = "Aalu";
+        plan[0][1] = Float.toString(quantity);
+      //  calculate(0, "Aalu", quantity); // Change index and name
+    }*/
+
+    /*public void Method(Float lol, String[][] arr, String name) {
+        arr = new String[1][5];
+        float x = lol;
+        arr[0][0] = name; // Name of the food
+        arr[0][1] = Float.toString(lol); // quantity
+        //arr[0][2] = calculate(); // TODO: implement CSV integration // cost
+        // TODO: implement life
+        //arr[0][3] =
+
+
+    }*/
+
+/*
+    public final List<String[]> readCsv(Context context) {
+        List<String[]> questionList = new ArrayList<String[]>();
+        AssetManager assetManager = context.getAssets();
+
+        try {
+            InputStream csvStream = assetManager.open("FoodIndex.csv");
+            InputStreamReader csvStreamReader = new InputStreamReader(csvStream);
+            CSVReader csvReader = new CSVReader(csvStreamReader);
+            String[] line;
+            while ((line = csvReader.readNext()) != null) {
+                questionList.add(line);
+
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return questionList;
+    }
+*/
+/*
+    public void MessageBox(String message){
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }*/
 
     public void ToNutInfo(View view) {
         Intent intent = new Intent(this, Nutritional_Information.class);
         Button toNutInfo = (Button) findViewById(R.id.toNutInfo);
         startActivity(intent);
-
+       // List<String[]> fuckoff = readCsv(getApplicationContext());
         final EditText aalu =  (EditText) findViewById(R.id.aalu_current);
         Float aaluCurrent = Float.parseFloat(aalu.getText().toString());
+        //Aalu(aaluCurrent);
         final EditText aata =  (EditText) findViewById(R.id.aata_current);
         Float aataCurrent = Float.parseFloat(aata.getText().toString());
         final EditText bajra =  (EditText) findViewById(R.id.bajra_current);
