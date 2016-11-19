@@ -16,16 +16,16 @@ public class Nutritional_Information extends AppCompatActivity {
         // changes Title and Subtitle
         android.support.v7.app.ActionBar ab = getSupportActionBar();
 
-        ab.setTitle("Nutritional information");
+        ab.setTitle("Nutritional information per week");
         float protein=MainActivity.totalProtein();
         TextView protein_Percent = (TextView)findViewById(R.id.protein_Percent);
-        protein_Percent.setText(String.valueOf(protein)+"%");
+        protein_Percent.setText(String.format("%.2f", protein)+"% of RI");
         float energy=MainActivity.totalEnergy();
         TextView energy_Percent = (TextView)findViewById(R.id.energy_Percent);
-        energy_Percent.setText(String.valueOf(energy)+"%");
+        energy_Percent.setText(String.format("%.2f", energy)+"% of RI");
         float cost=MainActivity.totalCost();
         TextView cost_Percent = (TextView)findViewById(R.id.cost_Percent);
-        cost_Percent.setText(String.valueOf(cost)+" rupees");
+        cost_Percent.setText(String.format("%.2f", cost)+" rupees");
     }
 
     Intent intent = getIntent();
