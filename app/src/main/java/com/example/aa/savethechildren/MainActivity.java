@@ -98,39 +98,54 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void Aalu(float quantity) {
-        plan[0][0] = "Aalu";
-        plan[0][1] = Float.toString(quantity);
-        plan[0][2]=Float.toString((float) (quantity*24.16));
-        plan[0][3]=Float.toString((float) (quantity*0.2));
-        plan[0][4]=Float.toString((float) (quantity*0.12));
-        return;
+        if (quantity >= 1) {
+            plan[0][0] = "Aalu";
+            plan[0][1] = Float.toString(quantity);
+            plan[0][2]=Float.toString((float) (quantity*24.16));
+            plan[0][3]=Float.toString((float) (quantity*0.2));
+            plan[0][4]=Float.toString((float) (quantity*0.12));
+        } else {
+            plan[0][1] = Float.toString(0);
+        }
+
     }
 
     public void Aata(float quantity) {
-        plan[1][0] = "Aata";
-        plan[1][1] = Float.toString(quantity);
-        plan[1][2]=Float.toString((float) (quantity*17.83));
-        plan[1][3]=Float.toString((float) (quantity*1.01));
-        plan[1][4]=Float.toString((float) (quantity*1.34));
-        return;
+        if (quantity >= 1) {
+            plan[1][0] = "Aata";
+            plan[1][1] = Float.toString(quantity);
+            plan[1][2] = Float.toString((float) (quantity * 17.83));
+            plan[1][3] = Float.toString((float) (quantity * 1.01));
+            plan[1][4] = Float.toString((float) (quantity * 1.34));
+            return;
+        } else {
+            plan[1][1] = Float.toString(0);
+        }
     }
-
     public void Bajra(float quantity) {
-        plan[2][0] = "Bajra";
-        plan[2][1] = Float.toString(quantity);
-        plan[2][2]=Float.toString((float) (quantity*14.24));
-        plan[2][3]=Float.toString((float) (quantity*1.08));
-        plan[2][4]=Float.toString((float) (quantity*1.05));
-        return;
+        if (quantity >= 1) {
+            plan[2][0] = "Bajra";
+            plan[2][1] = Float.toString(quantity);
+            plan[2][2] = Float.toString((float) (quantity * 14.24));
+            plan[2][3] = Float.toString((float) (quantity * 1.08));
+            plan[2][4] = Float.toString((float) (quantity * 1.05));
+            return;
+        } else {
+            plan[2][1] = Float.toString(0);
+        }
     }
 
     public void Bhains(float quantity) {
-        plan[3][0] = "Bhains ka dudh";
-        plan[3][1] = Float.toString(quantity);
-        plan[3][2]=Float.toString((float) (quantity*38.69));
-        plan[3][3]=Float.toString((float) (quantity*0.3));
-        plan[3][4]=Float.toString((float) (quantity*0.38));
-        return;
+        if (quantity >= 1) {
+            plan[3][0] = "Bhains ka dudh";
+            plan[3][1] = Float.toString(quantity);
+            plan[3][2] = Float.toString((float) (quantity * 38.69));
+            plan[3][3] = Float.toString((float) (quantity * 0.3));
+            plan[3][4] = Float.toString((float) (quantity * 0.38));
+            return;
+        } else {
+            plan[3][1] = Float.toString(0);
+        }
     }
 
     public void Breast(float quantity) {
