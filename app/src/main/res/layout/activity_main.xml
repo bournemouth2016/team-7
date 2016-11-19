@@ -78,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText13"
+                    android:id="@+id/bhainsKaDudh_current"
                     android:text="0" />
             </TableRow>
 
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText14"
+                    android:id="@+id/breastMilk_current"
                     android:text="0" />
             </TableRow>
 
@@ -104,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText15"
+                    android:id="@+id/chauliHaraSaahg_current"
                     android:text="0" />
             </TableRow>
 
@@ -117,7 +117,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText16"
+                    android:id="@+id/cholaSafed_current"
                     android:text="0" />
             </TableRow>
 
@@ -130,7 +130,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText17"
+                    android:id="@+id/chotiMachli_current"
                     android:text="0" />
             </TableRow>
 
@@ -143,7 +143,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText18"
+                    android:id="@+id/coriander_current"
                     android:text="0" />
             </TableRow>
 
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText19"
+                    android:id="@+id/lalSaag_current"
                     android:text="0" />
             </TableRow>
 
@@ -169,7 +169,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText20"
+                    android:id="@+id/methiSaag_current"
                     android:text="0" />
             </TableRow>
 
@@ -182,7 +182,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText21"
+                    android:id="@+id/nariyal_current"
                     android:text="0" />
             </TableRow>
 
@@ -195,7 +195,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText22"
+                    android:id="@+id/sarson_current"
                     android:text="0" />
             </TableRow>
 
@@ -208,7 +208,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/editText23"
+                    android:id="@+id/tejpata_current"
                     android:text="0" />
             </TableRow>
         </TableLayout>
