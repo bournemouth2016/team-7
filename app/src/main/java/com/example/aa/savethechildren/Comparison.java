@@ -12,6 +12,12 @@ public class Comparison extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comparison);
+
+        // changes Title and Subtitle
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+
+        ab.setTitle("Compare your diets");
+
     }
 
     Intent intent = getIntent();
@@ -21,10 +27,8 @@ public class Comparison extends AppCompatActivity {
         Button toNewDiet = (Button) findViewById(R.id.toNewDiet);
         startActivity(intent);
 
-        // changes Title and Subtitle
-        android.support.v7.app.ActionBar ab = getSupportActionBar();
-
-        ab.setTitle("Compare your diets");
     }
+
+
 
 }

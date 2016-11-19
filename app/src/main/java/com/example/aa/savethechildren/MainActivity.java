@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         final EditText aalu =  (EditText) findViewById(R.id.aalu_current);
         String aaluCurrent = aalu.getText().toString();
         final EditText aata =  (EditText) findViewById(R.id.aata_current);
-        aata.getText().toString();
+        String aataCurrent = aata.getText().toString();
         final EditText bajra =  (EditText) findViewById(R.id.bajra_current);
         aalu.getText().toString();
         final EditText bhainsKaDudh =  (EditText) findViewById(R.id.bhainsKaDudh_current);
