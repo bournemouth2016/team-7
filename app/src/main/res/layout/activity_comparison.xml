@@ -19,4 +19,91 @@
         android:layout_marginBottom="29dp"
         android:id="@+id/toNewDiet"
         android:onClick="ToNewDiet" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="needed_nutrition1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/needed_nutrition1"
+                    android:textSize="30sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:text="nutrition1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nutrition1_1"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:text="nutrition1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nutrition1_2"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="needed_nutrition2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/needed_nutrition2"
+                    android:textSize="30sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:text="nutrition2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nutrition2_1"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:text="nutrition2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nutrition2_2"
+                    android:textSize="18sp" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
 </RelativeLayout>

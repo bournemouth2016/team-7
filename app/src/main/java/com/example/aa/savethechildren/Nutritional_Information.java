@@ -25,7 +25,7 @@ public class Nutritional_Information extends AppCompatActivity {
         energy_Percent.setText(String.valueOf(energy)+"%");
         float cost=MainActivity.totalCost();
         TextView cost_Percent = (TextView)findViewById(R.id.cost_Percent);
-        cost_Percent.setText(String.valueOf(cost));
+        cost_Percent.setText(String.valueOf(cost)+" rupees");
     }
 
     Intent intent = getIntent();
