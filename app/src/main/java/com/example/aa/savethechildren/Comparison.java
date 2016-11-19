@@ -8,7 +8,15 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.io.InputStream;
+import java.util.List;
+
 public class Comparison extends AppCompatActivity {
+
+    public String E1 = "A";
+    public String E2;
+    public String P1;
+    public String P2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,48 +27,31 @@ public class Comparison extends AppCompatActivity {
         android.support.v7.app.ActionBar ab = getSupportActionBar();
 
         ab.setTitle("Compare your diets");
-
+       // compareEnergy();
         //Find the three nutrients most lacking from the current diet
         //Set the three textView to these
         TextView needed_nutrition1 = (TextView)findViewById(R.id.needed_nutrition1);
-        needed_nutrition1.setText("Nutrient most needed");
+        needed_nutrition1.setText("Energy");
 
         TextView needed_nutrition2 = (TextView)findViewById(R.id.needed_nutrition2);
-        needed_nutrition2.setText("Nutrient 2nd most needed");
-
-        TextView needed_nutrition3 = (TextView)findViewById(R.id.needed_nutrition3);
-        needed_nutrition3.setText("Nutrient 3rd most needed");
+        needed_nutrition2.setText("Protein");
 
         //Find the 3 best foods to tackle each and set the check box labels
         //Checkboxes for nutrition 1
         CheckBox nutrition1_1 = (CheckBox)findViewById(R.id.nutrition1_1);
-        nutrition1_1.setText("nutrition1_1 checkbox");
+        String temp="ffasd";
+        nutrition1_1.setText(E1);
+
 
         CheckBox nutrition1_2 = (CheckBox)findViewById(R.id.nutrition1_2);
-        nutrition1_2.setText("nutrition1_2 checkbox");
-
-        CheckBox nutrition1_3 = (CheckBox)findViewById(R.id.nutrition1_3);
-        nutrition1_3.setText("nutrition1_3 checkbox");
+        nutrition1_2.setText(E2);
 
         //Checkboxes for nutrition 2
         CheckBox nutrition2_1 = (CheckBox)findViewById(R.id.nutrition2_1);
         nutrition2_1.setText("nutrition2_1 checkbox");
-
         CheckBox nutrition2_2 = (CheckBox)findViewById(R.id.nutrition2_2);
         nutrition2_2.setText("nutrition2_2 checkbox");
 
-        CheckBox nutrition2_3 = (CheckBox)findViewById(R.id.nutrition2_3);
-        nutrition2_3.setText("nutrition2_3 checkbox");
-
-        //Checkboxes for nutrition 3
-        CheckBox nutrition3_1 = (CheckBox)findViewById(R.id.nutrition3_1);
-        nutrition3_1.setText("nutrition3_1 checkbox");
-
-        CheckBox nutrition3_2 = (CheckBox)findViewById(R.id.nutrition3_2);
-        nutrition3_2.setText("nutrition3_2 checkbox");
-
-        CheckBox nutrition3_3 = (CheckBox)findViewById(R.id.nutrition3_3);
-        nutrition3_3.setText("nutrition3_3 checkbox");
     }
 
     Intent intent = getIntent();
@@ -72,6 +63,28 @@ public class Comparison extends AppCompatActivity {
 
     }
 
+    public void compareEnergy(){
+        boolean first=true;
+        InputStream inputStream = getResources().openRawResource(R.raw.fhab);
+        CsvFile csvFile = new CsvFile(inputStream);
+        List<String[]> scoreList = csvFile.read();
+        int i=0;
+        for (String[] str : scoreList) {
+            if (i<13) {
+                String[] fhab = str[i].split(",");
+                System.out.println(fhab[1]);
+                if ((Float.valueOf(fhab[5]) > 10.0)) {
+                    if (first == true) {
+                        E1 = fhab[0];
+                        first = false;
+                    } else
+                        E2 = fhab[0];
+                }
+                i++;
+            }
+        }
 
+
+    }
 
 }
