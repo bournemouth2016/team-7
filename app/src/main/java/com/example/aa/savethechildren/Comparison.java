@@ -57,6 +57,20 @@ public class Comparison extends AppCompatActivity {
     //T
     Intent intent = getIntent();
     public void ToNewDiet(View view) {
+        final CheckBox checkBox = (CheckBox) findViewById(R.id.nutrition1_1);
+        if (checkBox.isChecked()) {
+            MainActivity.plan[0][1]=String.valueOf(Float.valueOf(MainActivity.plan[0][1])+EQ1);
+        }
+        else{
+            MainActivity.plan[13][1]=String.valueOf(Float.valueOf(MainActivity.plan[13][1])+EQ2);
+        }
+        final CheckBox checkBox1 = (CheckBox) findViewById(R.id.nutrition2_1);
+        if (checkBox1.isChecked()) {
+            MainActivity.plan[0][1]=String.valueOf(Float.valueOf(MainActivity.plan[0][1])+PQ1);
+        }
+        else{
+            MainActivity.plan[9][1]=String.valueOf(Float.valueOf(MainActivity.plan[9][1])+PQ2);
+        }
         Intent intent = new Intent(this, NewDiet.class);
         Button toNewDiet = (Button) findViewById(R.id.toNewDiet);
         startActivity(intent);
@@ -74,11 +88,11 @@ public class Comparison extends AppCompatActivity {
                 if ((Float.valueOf(str[3]) > 10.0)) {
                     if (first == true) {
                         E1 = str[0];
-                        EQ1=Float.valueOf(str[1]);
+                        EQ1=2;
                         first = false;
                     } else {
                         E2 = str[0];
-                        EQ2 = Float.valueOf(str[1]);
+                        EQ2 = 2;
                     }
                 }
                 i++;
@@ -96,11 +110,11 @@ public class Comparison extends AppCompatActivity {
                 if ((Float.valueOf(str[1]) > Float.valueOf(MainActivity.plan[i][1])*52 ) & (Float.valueOf(str[1]) > 10.0)) {
                     if (first == true) {
                         P1 = str[0];
-                        PQ1=Float.valueOf(str[1]);
+                        PQ1=2;
                         first = false;
                     } else {
                         P2 = str[0];
-                        PQ2 = Float.valueOf(str[1]);
+                        PQ2 = 2;
                     }
                 }
                 i++;

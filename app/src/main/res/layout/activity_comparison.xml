@@ -52,7 +52,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/nutrition1_1"
-                    android:textSize="18sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
             </TableRow>
 
@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/nutrition1_2"
-                    android:textSize="18sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
             </TableRow>
 
             <TableRow
@@ -89,7 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/nutrition2_1"
-                    android:textSize="18sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
             </TableRow>
 
             <TableRow
@@ -101,7 +101,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/nutrition2_2"
-                    android:textSize="18sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
             </TableRow>
 
         </TableLayout>

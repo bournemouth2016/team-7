@@ -21,7 +21,9 @@
 
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,14 +47,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/protineTextFeild"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
                 <TextView
                     android:text="Protein Percent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/protein_Percent"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
             </TableRow>
 
@@ -66,14 +68,14 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/energyTextField"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
                 <TextView
                     android:text="Energy Percent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/energy_Percent"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
             </TableRow>
 
@@ -87,14 +89,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/costTextField"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
                 <TextView
                     android:text="Cost Percent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/cost_Percent"
-                    android:textSize="30sp" />
+                    android:textAppearance="@android:style/TextAppearance.Material.Large" />
             </TableRow>
 
             <TableRow
