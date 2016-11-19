@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Nutritional_Information"></activity>
+        <activity android:name=".Nutritional_Information" />
+        <activity android:name=".Comparison"></activity>
     </application>
 
 </manifest>
