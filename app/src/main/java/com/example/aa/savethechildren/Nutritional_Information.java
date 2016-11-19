@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Nutritional_Information extends AppCompatActivity {
 
@@ -16,6 +17,17 @@ public class Nutritional_Information extends AppCompatActivity {
         android.support.v7.app.ActionBar ab = getSupportActionBar();
 
         ab.setTitle("Nutritional information");
+
+        TextView protein_Percent = (TextView)findViewById(R.id.protein_Percent);
+        protein_Percent.setText("Protein %");
+
+        TextView energy_Percent = (TextView)findViewById(R.id.energy_Percent);
+        energy_Percent.setText("Energy %");
+
+        TextView cost_Percent = (TextView)findViewById(R.id.cost_Percent);
+        cost_Percent.setText("Cost %");
+
+
     }
 
     Intent intent = getIntent();
